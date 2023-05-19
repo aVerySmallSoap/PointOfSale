@@ -1,4 +1,4 @@
-package Components.Themes;
+package Components.Themes.Colors;
 
 import java.awt.*;
 
