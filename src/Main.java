@@ -1,12 +1,14 @@
 import Components.Dashboard;
+import Components.Themes.SplitTheme;
 import Components.Themes.ThemeLoader;
+import com.formdev.flatlaf.FlatLightLaf;
 
 public class Main {
 
     public static void main(String[] args) {
         ThemeLoader.loadThemes();
-        Dashboard dash = new Dashboard();
-        dash.run();
+        FlatLightLaf.setup();
+        Dashboard.run();
     }
 
 }

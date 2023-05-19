@@ -2,20 +2,29 @@ package Components;
 
 import Components.Panels.CenterPanel;
 import Components.Panels.ReceiptPanel;
-import Components.Themes.Colors;
-import com.formdev.flatlaf.FlatLightLaf;
+import Components.Themes.SplitTheme;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class Dashboard extends JFrame implements Runnable {
+public class Dashboard extends JFrame {
+
+    private static Dashboard dashboard;
+
+    private Dashboard(){}
+
+    public static Dashboard getInstance(){
+        if(dashboard == null){
+            dashboard = new Dashboard();
+        }
+        return dashboard;
+    }
 
     private void init(){
-        FlatLightLaf.setup();
+        SplitTheme.setUp();
         CenterPanel centerPanel = new CenterPanel();
         ReceiptPanel receiptPanel = new ReceiptPanel();
         JSplitPane pane = new JSplitPane();
-        JSplitPane pane2 = new JSplitPane();
 
         this.setLayout(new BorderLayout());
         this.setTitle("Product Manager");
@@ -24,18 +33,14 @@ public class Dashboard extends JFrame implements Runnable {
 
 
         pane.setLeftComponent(centerPanel);
-        pane2.setLeftComponent(null);
-        pane2.setRightComponent(receiptPanel);
-        pane.setRightComponent(pane2);
+        pane.setRightComponent(receiptPanel);
         pane.setResizeWeight(0.5);
 
         this.add(pane, BorderLayout.CENTER);
-//        this.add(receiptPanel, BorderLayout.EAST);
         this.setVisible(true);
     }
 
-    @Override
-    public void run() {
-        init();
+    public static void run() {
+        Dashboard.getInstance().init();
     }
 }

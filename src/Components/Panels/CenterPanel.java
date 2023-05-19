@@ -1,7 +1,7 @@
 package Components.Panels;
 
-import Components.Themes.Colors;
-import com.formdev.flatlaf.FlatLightLaf;
+import Components.Themes.Colors.Colors;
+import Components.Themes.SplitTheme;
 
 import javax.swing.*;
 import javax.swing.border.MatteBorder;
@@ -10,7 +10,6 @@ import java.awt.*;
 public class CenterPanel extends JPanel {
 
     public CenterPanel(){
-        FlatLightLaf.setup();
         JTabbedPane tabs = new JTabbedPane();
 
         this.setLayout(new GridLayout());
