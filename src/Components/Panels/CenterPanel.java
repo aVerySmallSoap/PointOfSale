@@ -18,6 +18,7 @@ public class CenterPanel extends JPanel {
         this.setBorder(new MatteBorder(0,0,0,1, Colors.PRIMARY));
         this.add(tabs);
         tabs.addTab("WAW", new JPanel());
+        this.setMinimumSize(new Dimension(0,0));
     }
 
 }
