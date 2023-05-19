@@ -36,7 +36,7 @@ public class Dashboard extends JFrame {
 
         pane.setLeftComponent(centerPanel);
         pane.setRightComponent(receiptPanel);
-        pane.setResizeWeight(0.5);
+        pane.setResizeWeight(1);
 
         this.add(navigationPanel, BorderLayout.WEST);
         this.add(pane, BorderLayout.CENTER);

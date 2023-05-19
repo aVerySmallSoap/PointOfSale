@@ -23,6 +23,7 @@ public class ConnectionController implements IConnector {
         try{
             return DriverManager.getConnection("jdbc:mysql://localhost:3306/"+schema.trim(), user.trim(), pass.trim());
         }catch (SQLException | NullPointerException e){
+            System.out.println(e.getMessage());
             return null;
         }
     }
