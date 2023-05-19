@@ -10,7 +10,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="JUnit" level="project" />
-    <orderEntry type="library" name="MySQL Connector J 8.0.32" level="project" />
     <orderEntry type="library" name="FlatLaf 3.1.1" level="project" />
+    <orderEntry type="library" name="MySQL ConnectorJ 8" level="project" />
   </component>
 </module>
