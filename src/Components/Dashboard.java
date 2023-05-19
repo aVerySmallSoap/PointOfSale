@@ -1,6 +1,7 @@
 package Components;
 
 import Components.Panels.CenterPanel;
+import Components.Panels.NavigationPanel;
 import Components.Panels.ReceiptPanel;
 import Components.Themes.SplitTheme;
 
@@ -22,6 +23,7 @@ public class Dashboard extends JFrame {
 
     private void init(){
         SplitTheme.setUp();
+        NavigationPanel navigationPanel = new NavigationPanel();
         CenterPanel centerPanel = new CenterPanel();
         ReceiptPanel receiptPanel = new ReceiptPanel();
         JSplitPane pane = new JSplitPane();
@@ -29,13 +31,14 @@ public class Dashboard extends JFrame {
         this.setLayout(new BorderLayout());
         this.setTitle("Product Manager");
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-        this.setSize(new Dimension(500,500));
-
+        this.setSize(Toolkit.getDefaultToolkit().getScreenSize());
+        this.setLocationRelativeTo(null);
 
         pane.setLeftComponent(centerPanel);
         pane.setRightComponent(receiptPanel);
         pane.setResizeWeight(0.5);
 
+        this.add(navigationPanel, BorderLayout.WEST);
         this.add(pane, BorderLayout.CENTER);
         this.setVisible(true);
     }
