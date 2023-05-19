@@ -1,11 +1,7 @@
 package Components.Panels;
 
-import Components.Themes.Colors.Colors;
-import com.formdev.flatlaf.FlatLightLaf;
-
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.border.MatteBorder;
 import java.awt.*;
 
 public class NavigationPanel extends JPanel {

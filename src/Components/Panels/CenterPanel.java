@@ -1,11 +1,7 @@
 package Components.Panels;
 
-import Components.Themes.Colors.Colors;
-import Components.Themes.SplitTheme;
-
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
-import javax.swing.border.MatteBorder;
 import java.awt.*;
 
 public class CenterPanel extends JPanel {

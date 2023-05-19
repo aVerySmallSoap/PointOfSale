@@ -1,7 +1,5 @@
 package Components.Panels;
 
-import Components.Themes.SplitTheme;
-
 import javax.swing.*;
 import java.awt.*;
 

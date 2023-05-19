@@ -1,5 +1,4 @@
 import Components.Dashboard;
-import Components.Themes.SplitTheme;
 import Components.Themes.ThemeLoader;
 import com.formdev.flatlaf.FlatLightLaf;
 
