@@ -1,4 +1,4 @@
-package Components.Panels.Pageable;
+package Components.Panels.Pageable.ProductionPage;
 
 
 import javax.swing.*;

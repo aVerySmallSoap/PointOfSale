@@ -1,6 +1,6 @@
 package Components.Functionals.Buttons;
 
-import Components.Panels.Pageable.ProductsPage;
+import Components.Panels.Pageable.ProductionPage.ProductsPage;
 import Controller.TabController;
 
 import javax.swing.*;
