@@ -1,9 +1,11 @@
 package Components;
 
+import Components.Functionals.TabPane.controlledTabs;
 import Components.Panels.CenterPanel;
 import Components.Panels.NavigationPanel;
 import Components.Panels.ReceiptPanel;
 import Components.Themes.SplitTheme;
+import Controller.TabController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -24,7 +26,7 @@ public class Dashboard extends JFrame {
     private void init(){
         SplitTheme.setUp();
         NavigationPanel navigationPanel = new NavigationPanel();
-        CenterPanel centerPanel = new CenterPanel();
+        CenterPanel centerPanel = new CenterPanel(TabController.getInstance());
         ReceiptPanel receiptPanel = new ReceiptPanel();
         JSplitPane pane = new JSplitPane();
 

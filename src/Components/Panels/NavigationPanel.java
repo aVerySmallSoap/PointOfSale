@@ -1,5 +1,6 @@
 package Components.Panels;
 
+import Components.Functionals.Buttons.ProductsList;
 import Components.Themes.Colors.Colors;
 
 import javax.swing.*;
@@ -19,6 +20,6 @@ public class NavigationPanel extends JPanel {
         constraints.weightx = 1;
         constraints.weighty = 1;
         constraints.insets = new Insets(5,5,5,5);
-        this.add(new JButton("AA"), constraints);
+        this.add(new ProductsList(), constraints);
     }
 }

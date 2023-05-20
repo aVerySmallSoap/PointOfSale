@@ -1,12 +1,13 @@
 package Controller;
 
 import Interfaces.IConnector;
+import Interfaces.IController;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class ConnectionController implements IConnector {
+public class ConnectionController implements IConnector, IController {
 
     private final String schema;
     private final String user;
