@@ -1,6 +1,6 @@
 package Components.Functionals.Buttons;
 
-import Components.Panels.Pageable.ProductionPage.ProductsPage;
+import Components.Panels.Pageable.Home.Home;
 import Controller.TabController;
 
 import javax.swing.*;
@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 
 public class ProductsList extends JButton implements ActionListener {
 
-    private final ProductsPage page = ProductsPage.getInstance();
+    private final Home page = Home.getInstance();
 
     public ProductsList(){
         this.setText("Products");

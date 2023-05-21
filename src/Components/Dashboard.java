@@ -1,6 +1,5 @@
 package Components;
 
-import Components.Functionals.TabPane.controlledTabs;
 import Components.Panels.CenterPanel;
 import Components.Panels.NavigationPanel;
 import Components.Panels.ReceiptPanel;
